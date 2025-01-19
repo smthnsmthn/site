@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destinations - Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+        header {
+            position: relative;
+            width: 100%;
+            height: 30vh; 
+            background: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+        nav {
+            background-color: rgba(31, 31, 31, 0.8);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+        }
+        .container {
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+            color: #ffcc00; 
+        }
+        .card-content p {
+            margin: 0;
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top Destinations</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="travel-tips.html">Travel Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Explore Our Top Picks</h2>
+        <p>Discover some of the most breathtaking destinations around the globe. Each location promises unforgettable experiences!</p>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=" alt="Paris">
+                <div class="card-content">
+                    <h3>Paris, France</h3>
+                    <p>The city of love and lights. Explore iconic landmarks like the Eiffel Tower and the Louvre Museum.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://afar.brightspotcdn.com/dims4/default/5896a05/2147483647/strip/false/crop/3000x2247+0+0/resize/1486x1113!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg" alt="Maldives">
+                <div class="card-content">
+                    <h3>Maldives</h3>
+                    <p>A tropical paradise known for its turquoise waters, white sandy beaches, and luxury resorts.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://assets.editorial.aetnd.com/uploads/2013/07/gettyimages-1390815938.jpg" alt="Tokyo">
+                <div class="card-content">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Experience the vibrant blend of traditional culture and futuristic technology in Japan's capital.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://1.bp.blogspot.com/-klHXHFbBkcg/Vh_oH8aFeyI/AAAAAAAADkI/WvdVpR4LWTc/s1600/CORT-NYC-StudyUSA07.jpg" alt="New York">
+                <div class="card-content">
+                    <h3>New York, USA</h3>
+                    <p>The city that never sleeps. Visit Times Square, Central Park, and the Statue of Liberty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+ 
+
+
+
+

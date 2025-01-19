@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+        header {
+            background: url('https://assets.weforum.org/article/image/XJkVQrA6uy9CVqo_9e3DMLlKvkOHcr8wPO4RbDhbsfc.jpg') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            height: 30vh;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: #1f1f1f; 
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+        }
+        .container {
+            padding: 20px;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background: linear-gradient(to right, #ee0979, #ff6a00);
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #ffcc00;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Explorer</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="travel-tips.html">Travel Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Travel Explorer</h2>
+        <p>Discover breathtaking destinations, helpful travel tips, and inspiring testimonials to plan your perfect journey.</p>
+        <p>Explore our curated recommendations and embark on an adventure of a lifetime!</p>
+        <img src="travel-placeholder.jpg" alt="A scenic view of a popular travel destination">
+        <a href="destinations.html" class="btn">Explore Destinations</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
